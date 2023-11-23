@@ -1,0 +1,23 @@
+#include <iostream>
+#include<cmath>
+using namespace std;
+
+int factorial(int x)
+{
+    if (x==0)
+        return 1;
+    return x * factorial(x-1);7
+}
+int main() {
+
+    int x;
+    cout << "Hello, World!"<<endl;
+    cout<<"Enter the number you want to find the factorial for: ";
+    cin>>x;
+
+    factorial(x);
+
+    int answer=factorial(x);
+    cout<<"Your answer is "<<answer<<" in factorial form";
+    return 0;
+}
